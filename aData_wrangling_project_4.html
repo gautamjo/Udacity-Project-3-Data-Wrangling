@@ -15034,8 +15034,8 @@ $( document ).ready(code_toggle);
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h1 style="color:indigo;"> <font face="Georgia, serif">Project 4: Wrangle OpenStreetMap Data</font></h1></p>
-<p style="color:darkolivegreen"><font face="Georgia, serif"> This is the fourth project in the Udacity Nano Degree Data Analyst Program</font></p>
+<p><h1 style="color:indigo;">Project 4: Wrangle OpenStreetMap Data</h1></p>
+<h4 style="color:darkolivegreen"> This is the fourth project in the Udacity Nano Degree Data Analyst Program</h4>
 </div>
 </div>
 </div>
@@ -15043,12 +15043,10 @@ $( document ).ready(code_toggle);
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>&lt;font face= "Georgia, serif" style= "color:mediumvioletred"&gt;<h3>What Is OpenStreetMap?</h3>&lt;/font&gt;
-&lt;font face= "Georgia, serif", style="color: darkslateblue"&gt;<p>The OpenStreetMap is an open initiative to create and provide free geographic data such as street maps to anyone who wants them. It is supported by the OpenStreetMap Foundation which is a UK-registered not-for-profit organization. Currently, OpenStreetMap has an active base of over two million volunteers all across the globe.</p>&lt;/font&gt;</p>
-<p>&lt;h3 style= "color:mediumvioletred"&gt;<font face="Georgia, serif">Project Overview</font>&lt;/h3&gt;&lt;font face= "Georgia, serif"&gt;<p style="color: darkslateblue">The project requires me to choose any area of the world in https://www.openstreetmap.org and use data munging techniques, such as assessing the quality of the data for validity, accuracy, completeness, consistency and uniformity, to clean the data of the area I have chosen. Finally, choose either MongoDB or SQL as the data schema to finish the project.</p>&lt;/font&gt;</p>
-<p><font face="Gergia, serif"><h4 style="color: mediumvioletred">Chosen Area:</h4></font> 
-&lt;font face= "Georgia, serif"&gt;<p style="color: darkslateblue">New Delhi, National Capital of India</p>&lt;/font&gt;</p>
-<p>&lt;font face= "Georgia, serif" font size="1px"&gt;<p style="color: darkslateblue">Explore The Union Territory Of New Delhi, India With An Interactive Map, Courtesy <a href="https://developer.mapquest.com">https://developer.mapquest.com</a>.<p>&lt;/font&gt;</p>
+<p><h3>What Is OpenStreetMap?</h3></p>
+<p>The OpenStreetMap is an open initiative to create and provide free geographic data such as street maps to anyone who wants them. It is supported by the OpenStreetMap Foundation which is a UK-registered not-for-profit organization. Currently, OpenStreetMap has an active base of over two million volunteers all across the globe.</p><p><h3>Project Overview</h3></p>
+<p>The project requires me to choose any area of the world in https://www.openstreetmap.org and use data munging techniques, such as assessing the quality of the data for validity, accuracy, completeness, consistency and uniformity, to clean the data of the area I have chosen. Finally, choose either MongoDB or SQL as the data schema to finish the project.</p><p><h4>Chosen Area:</h4></p>
+<p>New Delhi, National Capital of India</p><p><p>Explore The Union Territory Of New Delhi, India With An Interactive Map, Courtesy <a href="https://developer.mapquest.com">https://developer.mapquest.com</a>.<p></p>
 
 </div>
 </div>
@@ -15122,8 +15120,7 @@ $( document ).ready(code_toggle);
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font face="Georgia, serif"><h4 style="color: #663399">Early Observations</h4></font></p>
-<p><font face="Georgia, serif" style="color: darkcyan">After getting my hands on the data, the first thing I did was to extract a sample from the original file I had downloaded. I wanted to explore the data and get familiar with it. Doing so with a smaller file was way more efficient. As the project required that I work on a file not less than 50MB, I had to make sure my sample doesn't fall below that limit. The code to extract a sample XML file can be found <a href= "make_sample.py">here</a>. I wanted to document the file size in the notebook. So, I wrote a small function that could print the file size in a tabular format. That code is <a href="print_a_table.py">here</a>. In the cell below, you can see the file sizes of both the original and the sample file.</font></p>
+<h4>Early Observations</h4><p>After getting my hands on the data, the first thing I did was to extract a sample from the original file I had downloaded. I wanted to explore the data and get familiar with it. Doing so with a smaller file was way more efficient. As the project required that I work on a file not less than 50MB, I had to make sure my sample doesn't fall below that limit. The code to extract a sample XML file can be found &lt;a href= "make_sample.py"&gt;here&lt;/a&gt;. I wanted to document the file size in the notebook. So, I wrote a small function that could print the file size in a tabular format. That code is <a href="print_a_table.py">here</a>. In the cell below, you can see the file sizes of both the original and the sample file.</p>
 
 </div>
 </div>
@@ -15175,7 +15172,7 @@ $( document ).ready(code_toggle);
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font face="Georgia, serif" style="color: darkcyan">After I had the sample file in place, I wanted to know things about the data right off the bat. The first thing I checked was the number of tags the XML file had. The code that counted the tags in the file is <a href="count_tags.py">here</a>. </font></p>
+<p>After I had the sample file in place, I wanted to know things about the data right off the bat. The first thing I checked was the number of tags the XML file had. The code that counted the tags in the file is <a href="count_tags.py">here</a>.</p>
 
 </div>
 </div>
@@ -15228,7 +15225,7 @@ $( document ).ready(code_toggle);
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font face="Georgia, serif" style="color: darkcyan"> The next thing I explored in the dataset was the top level tags. These tags contained attributes like <code style="color: green">'id', 'lat', 'lon', 'user', 'uid', 'version', 'changeset', 'timestamp'</code>. The<code style="color: green"> "uid" </code>attribute consisted of a unique id number of every contributor who had worked on this dataset. I thought, it would be nice to know the count of such unique users. With the help of this <a href="uniq_users.py">code</a> I was able to do so. The actual count of unique users in the sample dataset is printed in the cell below.</font></p>
+<p>The next thing I explored in the dataset was the top level tags. These tags contained attributes like <code style="color: green">'id', 'lat', 'lon', 'user', 'uid', 'version', 'changeset', 'timestamp'</code>. The<code style="color: green"> "uid" </code>attribute consisted of a unique id number of every contributor who had worked on this dataset. I thought, it would be nice to know the count of such unique users. With the help of this <a href="uniq_users.py">code</a> I was able to do so. The actual count of unique users in the sample dataset is printed in the cell below.</p>
 
 </div>
 </div>
@@ -15270,7 +15267,7 @@ $( document ).ready(code_toggle);
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>&lt;font face= "Georgia, serif" style="color: darkcyan"&gt;Next, I went on to explore the second level tags. Iterating over the attributes of the second level tags gave a dictionary. This dictionary contained keys <code style="color: green">"k" </code>and <code style="color: green">"v"</code>. The key <code style="color: green">"k"</code> contained values with colons like <code style="color: green">"addr:street" </code>or <code style="color: green">"addr:postcode" </code>or just simple lower cased values like <code style="color: green">"phone"</code>. I took a count of those values with this <a href="key_type.py">code</a>. The result of the count is printed below.&lt;/font&gt;</p>
+<p>Next, I went on to explore the second level tags. Iterating over the attributes of the second level tags gave a dictionary. This dictionary contained keys <code style="color: green">"k" </code>and <code style="color: green">"v"</code>. The key <code style="color: green">"k"</code> contained values with colons like <code style="color: green">"addr:street" </code>or <code style="color: green">"addr:postcode" </code>or just simple lower cased values like <code style="color: green">"phone"</code>. I took a count of those values with this <a href="key_type.py">code</a>. The result of the count is printed below.</p>
 
 </div>
 </div>
@@ -15317,7 +15314,7 @@ $( document ).ready(code_toggle);
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>&lt;font face= "Georgia, serif" style="color: darkcyan"&gt;In order to understand the dataset better, I examined it from various aspects. This allowed me later to write codes that helped manipulate and reshape the dataset according to the requirements of the project. If you are interested in knowing how I derived at the codes for this project, this link <a href="data_wrangling_project_4_notes.ipynb"> data_wrangling_project_4_notes.ipynb </a> will give you access to the notes I wrote while preparing for this project. Although, I have tried to explain what is happening in codes through comments but I must still warn you that these notes are quite tedious and in many places lack any proper order.&lt;/font&gt;</p>
+<p>In order to understand the dataset better, I examined it from various aspects. This allowed me later to write codes that helped manipulate and reshape the dataset according to the requirements of the project. If you are interested in knowing how I derived at the codes for this project, this link <a href="data_wrangling_project_4_notes.ipynb"> data_wrangling_project_4_notes.ipynb </a> will give you access to the notes I wrote while preparing for this project. Although, I have tried to explain what is happening in codes through comments but I must still warn you that these notes are quite tedious and in many places lack any proper order.</p>
 
 </div>
 </div>
@@ -15326,9 +15323,9 @@ $( document ).ready(code_toggle);
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font face="Georgia, serif" style="color: darkgreen;">The New Delhi OSM dataset was quite nicely maintained, nonetheless, there were some minor problem with it here and there. Let me take you through a step by step process of introducing you to those problems and how I was able to resolve them.</font></p>
-<p><font face="Georgia, serif"><h4 style="color: red;">Problems Encountered</h4>
-<font face="Georgia, serif" style="color: darkgreen;">In this dataset, I was primarily concerned with three main problems I observed. The first problem was with the street names. Street addresses contained misspellings, inconsistent hyphenation (-), mixed casing and inconsistent use of abbrevation. Some examples of such problems are:<ul><code style="color: indigo"><li>Roman Numerals -> South City II</li><li>Lower Casing   -> janakpuri</li><li>Mixed Casing   -> Shiv Arcade,aacharya niketan,mayor vihar ph-1</li><li>Misspelling    -> Pahargan</li><li>Hyhpen         -> Phi-02</li></code></ul></font></p>
+<p>The New Delhi OSM dataset was quite nicely maintained, nonetheless, there were some minor problem with it here and there. Let me take you through a step by step process of introducing you to those problems and how I was able to resolve them.</p>
+<p><h4>Problems Encountered</h4>
+In this dataset, I was primarily concerned with three main problems I observed. The first problem was with the street names. Street addresses contained misspellings, inconsistent hyphenation (-), mixed casing and inconsistent use of abbrevation. Some examples of such problems are:<ul><code style="color: indigo"><li>Roman Numerals -> South City II</li><li>Lower Casing   -> janakpuri</li><li>Mixed Casing   -> Shiv Arcade,aacharya niketan,mayor vihar ph-1</li><li>Misspelling    -> Pahargan</li><li>Hyhpen         -> Phi-02</li></code></ul></p>
 
 </div>
 </div>
@@ -15337,7 +15334,7 @@ $( document ).ready(code_toggle);
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font face="Georgia, serif" style="color: darkgreen;">The second problem I ran into was of invalid pin code entries in some places. In NCR Delhi, a valid pin code has 6 digits. However, some pin codes in the dataset had more than 6 digits or whitespaces or typos. Here are some examples of errors I found related to pin codes:<ul><code style="color: indigo"><li>100006</li><li>1100002</li><li>2013010</li><li>110 021</li></code></ul></font></p>
+<p>The second problem I ran into was of invalid pin code entries in some places. In NCR Delhi, a valid pin code has 6 digits. However, some pin codes in the dataset had more than 6 digits or whitespaces or typos. Here are some examples of errors I found related to pin codes:<ul><code style="color: indigo"><li>100006</li><li>1100002</li><li>2013010</li><li>110 021</li></code></ul></p>
 
 </div>
 </div>
@@ -15346,7 +15343,7 @@ $( document ).ready(code_toggle);
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font face="Georgia, serif" style="color: darkgreen;">The last problem was with phone numbers. The phone numbers themselves were entered correctly, that is, they had valid 10 and 8 digits with proper area codes. But, they had inconsistent whitespaces and hyphenation. Some examples of irregualar phone numbers are:<ul><code style="color: indigo"><li>+91 11 3955 5000</li><li>91-11-2687-6564</li><li>+91 9958080618</li><li>0120 252 0242</li></code></ul></font></p>
+<p>The last problem was with phone numbers. The phone numbers themselves were entered correctly, that is, they had valid 10 and 8 digits with proper area codes. But, they had inconsistent whitespaces and hyphenation. Some examples of irregualar phone numbers are:<ul><code style="color: indigo"><li>+91 11 3955 5000</li><li>91-11-2687-6564</li><li>+91 9958080618</li><li>0120 252 0242</li></code></ul></p>
 
 </div>
 </div>
@@ -15355,11 +15352,15 @@ $( document ).ready(code_toggle);
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font face="Georgia, serif"><h4 style="color: crimson">Audit Strategy</h4></font><font face="Georgia, serif" style="color: darkcyan">All the three problems I encountered in the dataset were quite distinct from one another. So, my thought process was quite straight forward: handle every problem independently while keeping the solutions as simple as possible.</font></p>
-<p><font face="Georgia, serif"><h4 style="color: crimson">Normalising Street Names:</h4></font><font face="Georgia, serif" style="color: darkcyan">Fixing street names was a three step process:<ol><li>Confrim it is a street name</li> <li>Check the last word of the street name. If that word exists in an expected list of street names, let it pass. If not, send it for updation</li> <li>Substitute the incorrect street name with the correct one</li></ol></font></p>
-<p><font face="Georgia, serif" style="color: darkcyan">All the disparate pieces of the code requied to make this process work can be found <a href="mapping.py">here</a> (Mapping), <a href="audit_street_type.py">here</a> (audit street types) and <a href="update_street_name.py">here </a> (update street type). I was able to successfully update street names by passing the data through these codes.<ul><li><code style="color: indigo">South City II --> South City 2</code></li><li><code style="color: indigo">Phi-02 --> Phi 02</code></li><li><code style="color: indigo">Shiv Arcade,aacharya niketan,mayor vihar ph-1 --> Shiv Arcade,Aacharya Niketan,Mayor Vihar Ph 1</code></li><li><code style="color: indigo">Pahargan --> Paharganj</code></li></ul></font></p><p><font face="Georgia, serif"><h4 style="color: crimson">Normalising Postal Codes:</h4></font><font face="Georgia, serif" style="color: darkcyan"> Fixing postal codes was also a three step process:<ol> <li>Confirm it is a postal code</li> <li>Pass all the postal codes through a series of checks. If whitespace, extra digits or any basic discrepancy is found, update that postal code</li> <li>Lastly, send it through a validator that checks it is a six digit postal code. The validator returns a valid pin code. Otherwise, the pin code is collected in a list for further inspection</li></ol></font></p>
-<p><font face="Georgia, serif" style="color: darkcyan">The code used to normalize postal codes can be found <a href="update_pin_code.py">here</a>. After processing the dataset with this code I was able to successfully resolve inconsistencies regarding pin codes.</font><ul><li><code style="color: indigo">100006 --> 110006</code></li><li><code style="color: indigo">1100002 --> 110002</code></li><li><code style="color: indigo">2013010 --> 201301</code></li><li><code style="color: indigo">110 021 --> 110021</code></li></ul></font></p><p><font face="Georgia, serif"><h4 style="color: crimson">Normalising Phone Numbers:</h4></font><font face="Georgia, serif" style="color: darkcyan"> Phone numbers did not need much fixing. However, their inconsistencies needed to be normalied. I did this in two steps:<ol> <li>Confirm it is a phone number</li> <li>Return phone number after striping all their whitespaces and hyphens</li></ol></font></p>
-<p><font face="Georgia, serif" style="color: darkcyan">The code used to update phone numbers is <a href= "update_phone_number.py">here</a>. I was able to successfully update phone numbers after applying this code to the dataset.</font><ul><li><code style="color: indigo">+91 11 3955 5000 --> +911139555000</code></li><li><code style="color: indigo">+91-120-3830000 --> +911203830000</code></li><li><code style="color: indigo">+91 11 4309 0000 --> +911143090000</code></li></ul></font></p>
+<p><h4>Audit Strategy</h4>
+All the three problems I encountered in the dataset were quite distinct from one another. So, my thought process was quite straight forward: handle every problem independently while keeping the solutions as simple as possible.</p>
+<p><h4>Normalising Street Names:</h4>
+Fixing street names was a three step process:<ol><li>Confrim it is a street name</li> <li>Check the last word of the street name. If that word exists in an expected list of street names, let it pass. If not, send it for updation</li> <li>Substitute the incorrect street name with the correct one</li></ol></p>
+<p>All the disparate pieces of the code requied to make this process work can be found <a href="mapping.py">here</a> (Mapping), <a href="audit_street_type.py">here</a> (audit street types) and <a href="update_street_name.py">here </a> (update street type). I was able to successfully update street names by passing the data through these codes.<ul><li><code style="color: indigo">South City II --> South City 2</code></li><li><code style="color: indigo">Phi-02 --> Phi 02</code></li><li><code style="color: indigo">Shiv Arcade,aacharya niketan,mayor vihar ph-1 --> Shiv Arcade,Aacharya Niketan,Mayor Vihar Ph 1</code></li><li><code style="color: indigo">Pahargan --> Paharganj</code></li></ul></p><p><h4>Normalising Postal Codes:</h4>
+Fixing postal codes was also a three step process:<ol> <li>Confirm it is a postal code</li> <li>Pass all the postal codes through a series of checks. If whitespace, extra digits or any basic discrepancy is found, update that postal code</li> <li>Lastly, send it through a validator that checks it is a six digit postal code. The validator returns a valid pin code. Otherwise, the pin code is collected in a list for further inspection</li></ol></p>
+<p>The code used to normalize postal codes can be found <a href="update_pin_code.py">here</a>. After processing the dataset with this code I was able to successfully resolve inconsistencies regarding pin codes.</font><ul><li><code style="color: indigo">100006 --> 110006</code></li><li><code style="color: indigo">1100002 --> 110002</code></li><li><code style="color: indigo">2013010 --> 201301</code></li><li><code style="color: indigo">110 021 --> 110021</code></li></ul></p><p><h4>Normalising Phone Numbers:</h4>
+Phone numbers did not need much fixing. However, their inconsistencies needed to be normalied. I did this in two steps:<ol> <li>Confirm it is a phone number</li> <li>Return phone number after striping all their whitespaces and hyphens</li></ol></p>
+<p>The code used to update phone numbers is <a href= "update_phone_number.py">here</a>. I was able to successfully update phone numbers after applying this code to the dataset.</font><ul><li><code style="color: indigo">+91 11 3955 5000 --> +911139555000</code></li><li><code style="color: indigo">+91-120-3830000 --> +911203830000</code></li><li><code style="color: indigo">+91 11 4309 0000 --> +911143090000</code></li></ul></p>
 </div>
 </div>
 </div>
@@ -15367,7 +15368,8 @@ $( document ).ready(code_toggle);
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>&lt;font face= "Georgia, serif"&gt;&lt;h4 style= "color: darkgreen"&gt;Reshaping Data And Writing Data To JSON&lt;/h4&gt;&lt;/font&gt;&lt;font face="Georgia, serif", style="color: slateblue"&gt;Before ingesting the dataset into a database management system, the dataset had to be remodeled into proper data structures. Besides that, I also had to make sure that as the data gets remodeled, it simultaneously gets cleansed of the problems I had discussed earlier. Finally, because I chose MongoDB as my prefered database, I also had to write the data into a JSON format. By putting all the pieces of the codes together I was able to write the final project code linked <a href="final_code_mongodb.py">here</a> and was able to pull this off. Here is an example of the JSON data from my dataset.&lt;/font&gt;<br>
+<p><h4>Reshaping Data And Writing Data To JSON</h4>
+Before ingesting the dataset into a database management system, the dataset had to be remodeled into proper data structures. Besides that, I also had to make sure that as the data gets remodeled, it simultaneously gets cleansed of the problems I had discussed earlier. Finally, because I chose MongoDB as my prefered database, I also had to write the data into a JSON format. By putting all the pieces of the codes together I was able to write the final project code linked <a href="final_code_mongodb.py">here</a> and was able to pull this off. Here is an example of the JSON data from my dataset.<br>
 <code style="color: indigo"> 
 {'address': {'postcode': '110011', 'street': 'Aurangzeb Road'},
  'created': {'changeset': '20864091',
@@ -15382,7 +15384,7 @@ $( document ).ready(code_toggle);
  'pos': [28.6006254, 77.2165438],
  'tourism': 'hotel',
  'type': 'node',
- 'website': '<a href="http://www.claridges.com/index.asp&#39;}">http://www.claridges.com/index.asp&#39;}</a><code/></p>
+ 'website': 'http://www.claridges.com/index.asp'}</code></p>
 
 </div>
 </div>
@@ -15391,8 +15393,8 @@ $( document ).ready(code_toggle);
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font face="Georgia, serif"><h4 style= "color: darkcyan">JSON File Sizes</h4></font>
-<font face="Georgia, serif" style="color: yellowgreen">After writing the data into JSON, I checked the size of the file. Below you will find the file sizes of all the files related to this project, printed in a tabular format.</font></p>
+<p><h4>JSON File Sizes</h4>
+After writing the data into JSON, I checked the size of the file. Below you will find the file sizes of all the files related to this project, printed in a tabular format.</p>
 
 </div>
 </div>
@@ -15446,8 +15448,8 @@ $( document ).ready(code_toggle);
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font face="Georgia, serif"><h4 style= "color: tomato">Creating a MongoDB Database</h4></font>
-&lt;font face="Georgia, serif" style= "color: darkblue"&gt;After the dataset was cleansed, remodeled and formatted, it was ready to be ingested into MongoDB. I was able to import the dataset from the Terminal by typing &lt;code style = "color: green"&gt;mongoimport --db delhiOSM --collection OSM_data &lt;new_delhi_sample.osm.json&lt;/code&gt; command. Then, through Robo3T I was able confirm the validity of the data being in the system.&lt;/font&gt;</p>
+<p><h4>Creating a MongoDB Database</h4>
+After the dataset was cleansed, remodeled and formatted, it was ready to be ingested into MongoDB. I was able to import the dataset from the Terminal by typing &lt;code style = "color: green"&gt;mongoimport --db delhiOSM --collection OSM_data &lt;new_delhi_sample.osm.json&lt;/code&gt; command. Then, through Robo3T I was able confirm the validity of the data being in the system.</p>
 
 </div>
 </div>
@@ -15456,8 +15458,8 @@ $( document ).ready(code_toggle);
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font face="Georgia, serif"><h4 style= "color: mediumslateblue">Queries</h4></font>
-&lt;font face= "Georgia, serif" style= "color: darkred;"&gt;Some queries I ran with pymongo while MongoDB was running locally. I have also tried to present visualizations of statistical queries in a couple of cases.&lt;/font&gt;</p>
+<p><h4>Queries</h4>
+Some queries I ran with pymongo while MongoDB was running locally. I have also tried to present visualizations of statistical queries in a couple of cases.</p>
 
 </div>
 </div>
@@ -16347,18 +16349,26 @@ AoeIiIiYToFDRERETKfAISIiIqb7fxuzFrk/W0tqAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font face="Georgia, serif" style="color: magenta;"><h4>Suggestions For Improvement</h4></font>
+<p><h4>Suggestions For Improvement</h4>
 <font face="Georgia, serif" style=" color: #663399;">The OpenStreetMap map editors give their users all the tools needed to curate, edit and update a geo spatial region in a systematic way. However, it depends on who is sitting on the other end of the editor and using those tools. As OpenStreetMap is fully run by a community of volunteers, these users could end up being anybody from professional mapper, surveyors, GIS professional to just casual, enthusiastic users. In my opinion, knowing what kind of user is contributing to the data, can help curb inconsistencies in the data to some extent. Therefore, a very high level suggestion to improve the quality of data would be to categorise the users as casual or professional. Tagging the user as casual or professional could give a hint about who the user could be. For new users this kind of tagging can be done at the time of joining, while exiting users can update their user profiles with this information.</font><br>
 <br>
 <font face="Georgia, serif" style=" color: #663399;">In all fairness, like a casual user a professional user too is likely to make an error. So, tagging alone can not certify the quality of data being fed into the system. However, what it can help in is to run basic statistics based on user tags. For example, someone analysing data of her region of interest could easily compute statistics based on contributions made by professional versus casual users. Furthermore, because entries can be traced against the user tags, bad entries can be flagged. A proportion of professional versus casual users responsible for such entries can then be computed. This information can then be shared on the OpenStreetMap blog, Users’ Diaries, forums etc. These statistics will help the community to learn more about itself and improve the system.</font><br> 
 <br>
-<font face="Georgia, serif" style="color: #663399;">Another suggestion would be to emphasize the role of local contributors. Community meet ups and events should be organized to encourage contributions from people who have knowledge about their locality. Data mainatained and updated by such contributors are much likely to be accurate.</font><br>
+<font style="color: #663399;">Another suggestion would be to emphasize the role of local contributors. Community meet ups and events should be organized to encourage contributions from people who have knowledge about their locality. Data mainatained and updated by such contributors are much likely to be accurate.</font><br>
 <br>
-<font face="Georgia, serif" style=" color: #663399;">Which brings me to my final suggestion. Besides taking volunteers only for mapping, the OpenStreetMap foundation should also look into taking volunteers for promotional and advertising activities as well. Responsibilities for such volunteers could include:</p>
-<p><ol></p>
-<p><li>Organising community meet ups</li><li>Preparing promotional material</li><li>Maintaining social media presence and Youtube channel</li><li>Orientating of new users towards ethical mapping practices</li><li>Urging technical users to make more mechanical edits than automated edits</li><li>Encouraging contributions from local contributors</li>&lt;/ol&gt;&lt;/font&gt;<br></p>
-<p><font face="Georgia, serif" style="color: magenta;"><h4>Conclusion</h4></font>
-<font face="Georgia, serif" style=" color: #663399;">While working on the New-Delhi OSM data, I observed incorrect entries, mispellings and other irregularities. I also observed that in some places data was throughly maintained while in others it was not quite so. These limitations made the dataset unreliable for direct use. Nonetheless, those error or irregularities where not terribly threating and after familiarising myself with the dataset I was able to normalise them. This entire process of understanding the XML data structure, observing the errors, cleaning those errors, reshaping data structures, writing those structures into a JSON, ingesting the JSON into a database and finally making queries from that database gave me a chance to understand data wrangling quite intimately. Through this project I also got introduced to the OpenStreetMaps initiative. I felt that OpenStreetMaps is a tremendous initiative. I think, they have a great community of really smart contributors all around the world and their contributions deserve a big applause. They have set up a great base for themselves and with a little more funding and some time this initiative is going to go really far.</font></p>
+<font style="color: #663399;">Which brings me to my final suggestion. Besides taking volunteers only for mapping, the OpenStreetMap foundation should also look into taking volunteers for promotional and advertising activities as well. Responsibilities for such volunteers could include:<br>
+<br></p>
+<ol>
+<li>Organising community meet ups<br></li>
+<li>Preparing promotional material<br></li>
+<li>Maintaining social media presence and Youtube channel<br></li>
+<li>Orientating of new users towards ethical mapping practices<br></li>
+<li>Urging technical users to make more mechanical edits than automated edits<br></li>
+<li>Encouraging contributions from local contributors&lt;/font&gt;<br>
+<br></li>
+</ol>
+<p><h4>Conclusion</h4>
+<font style=" color: #663399;">While working on the New-Delhi OSM data, I observed incorrect entries, mispellings and other irregularities. I also observed that in some places data was throughly maintained while in others it was not quite so. These limitations made the dataset unreliable for direct use. Nonetheless, those error or irregularities where not terribly threating and after familiarising myself with the dataset I was able to normalise them. This entire process of understanding the XML data structure, observing the errors, cleaning those errors, reshaping data structures, writing those structures into a JSON, ingesting the JSON into a database and finally making queries from that database gave me a chance to understand data wrangling quite intimately. Through this project I also got introduced to the OpenStreetMaps initiative. I felt that OpenStreetMaps is a tremendous initiative. I think, they have a great community of really smart contributors all around the world and their contributions deserve a big applause. They have set up a great base for themselves and with a little more funding and some time this initiative is going to go really far.</font></p>
 
 </div>
 </div>
