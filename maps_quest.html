@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Map Of New Delhi</title>
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.0.0/mapquest.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.0.0/mapquest.css"/>
+
+    <script type="text/javascript">
+      window.onload = function() {
+        L.mapquest.key = 'lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24';
+
+        var map = L.mapquest.map('map', {
+          center: [28.63576, 77.22445],
+          layers: L.mapquest.tileLayer('map'),
+          zoom: 9
+        });
+
+        map.addControl(L.mapquest.control());
+      }
+    </script>
+  </head>
+
+  <body style="border: 0; margin: 0;">
+    <div id="map" style="width: 100%; height: 530px;"></div>
+  </body>
+</html>
