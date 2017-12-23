@@ -1,1 +1,1 @@
-#### This is the Data Wrangling Project repo. This is the fourth project in the Udacity Nano Degree Program for Data Analysis. To view the project kindly click [here](http://nbviewer.jupyter.org/github/gautamjo/Udacity_Project_4_Data_Wrangling/blob/master/aData_wrangling_project_4.html). ####
+#### This is the Data Wrangling Project repo. This is the fourth project in Udacity' Data Analyst Nano Degree Program. To view the project kindly click [here](http://nbviewer.jupyter.org/github/gautamjo/Udacity_Project_4_Data_Wrangling/blob/master/aData_wrangling_project_4.html). ####
